@@ -22,7 +22,7 @@ function myNavbar(props) {
                                     </DropdownToggle>
                                     <DropdownMenu right>
                                         <DropdownItem>
-                                            <Link to="/home">home</Link>
+                                            <Link to="/search">Search</Link>
                                         </DropdownItem>
                                         <DropdownItem>
                                             <Link to="/register">register</Link>

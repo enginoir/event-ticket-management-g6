@@ -4,18 +4,18 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.css"
 
 import Home from './pages/Home';
+import Search from './pages/Search'
 import Register from './pages/auth/Register';
 import Login from './pages/auth/Login';
 import Navbar from './components/myNavbar';
 
 import { connect } from 'react-redux';
 import { userKeepLogin, checkStorage } from './redux/actions/user';
+import ProductCard from './components/ProductCard';
 
 function App(props) {
-
     useEffect(() => {
     const userlocalStorage = localStorage.getItem("userDataEvent");
-    
     if (userlocalStorage) {
       const userData = JSON.parse(userlocalStorage)
       props.userKeepLogin(userData)
@@ -35,8 +35,11 @@ function App(props) {
           <Navbar />
           <Routes>
             <Route Component={Home} path='/' />
+            <Route Component={Search} path='/search' />
+            <Route Component={ProductCard} path='/product-card' />
             <Route Component={Register} path='/register' />
             <Route Component={Login} path='/login' />
+
   
   
           </Routes>
