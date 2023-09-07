@@ -1,0 +1,190 @@
+{
+  "users": [
+    {
+      "fullname": "ayy",
+      "username": "ayyimtesting",
+      "email": "ayyimtesting@gmail.com",
+      "password": "pa55word",
+      "id": 1
+    },
+    {
+      "fullname": "ayy1",
+      "username": "ayyimtesting1",
+      "email": "ayyimtesting1@gmail.com",
+      "password": "abcdefg",
+      "role": "user",
+      "id": 2
+    },
+    {
+      "fullname": "",
+      "username": "",
+      "email": "abc@gmail.com",
+      "password": "abcd",
+      "role": "user",
+      "id": 3
+    },
+    {
+      "fullname": "sadasdsad",
+      "username": "dfssfddfsdsffds",
+      "email": "adbc@gmail.com",
+      "password": "abcdd",
+      "role": "user",
+      "id": 4
+    },
+    {
+      "fullname": "abcd",
+      "username": "efgh",
+      "email": "abcd@gmail.com",
+      "password": "abcdefgh",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "fullname": "",
+      "username": "",
+      "email": "",
+      "password": "",
+      "role": "user",
+      "id": 6
+    },
+    {
+      "fullname": "",
+      "username": "",
+      "email": "",
+      "password": "",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "fullname": "arnold suasanaseger",
+      "username": "arnold",
+      "email": "arnold@gmail.com",
+      "password": "password",
+      "role": "user",
+      "id": 8
+    },
+    {
+      "fullname": "1234",
+      "username": "12345",
+      "email": "123@gmail.com",
+      "password": "password",
+      "role": "user",
+      "id": 9
+    },
+    {
+      "fullname": "bill gates",
+      "username": "bill",
+      "email": "bill@gmail.com",
+      "password": "password",
+      "role": "user",
+      "id": 10
+    },
+    {
+      "fullname": "Full Name",
+      "username": "",
+      "email": "",
+      "password": "",
+      "role": "user",
+      "id": 11
+    },
+    {
+      "fullname": "udin ajib",
+      "username": "udin",
+      "email": "udin@gmail.com",
+      "password": "password",
+      "role": "user",
+      "id": 12
+    },
+    {
+      "fullname": "pak ujang",
+      "username": "ujang",
+      "email": "ujang@gmail.com",
+      "password": "password",
+      "role": "user",
+      "id": 13
+    },
+    {
+      "fullname": "dsad",
+      "username": "asdasd",
+      "email": "fdds",
+      "password": "dsfsdfdsf",
+      "role": "user",
+      "id": 14
+    },
+    {
+      "fullname": "Xzxz",
+      "username": "Zxz",
+      "email": "Zxzx",
+      "password": "zxZXz",
+      "role": "user",
+      "id": 15
+    },
+    {
+      "fullname": "sadasd",
+      "username": "asdasds",
+      "email": "sdfdsfdfs",
+      "password": "dsfdfsdfs",
+      "role": "user",
+      "id": 16
+    },
+    {
+      "fullname": "tes",
+      "username": "tes",
+      "email": "tes",
+      "password": "tes",
+      "role": "user",
+      "id": 17
+    },
+    {
+      "fullname": "abc",
+      "username": "abc",
+      "email": "abc",
+      "password": "abc",
+      "role": "user",
+      "id": 18
+    },
+    {
+      "fullname": "efg",
+      "username": "efg",
+      "email": "efg",
+      "password": "efg",
+      "role": "user",
+      "id": 19
+    },
+    {
+      "fullname": "qwe",
+      "username": "qwe",
+      "email": "qwe",
+      "password": "qwe",
+      "role": "user",
+      "id": 20
+    },
+    {
+      "fullname": "",
+      "username": "testing1",
+      "email": "testing1@gmail.com",
+      "password": "qwe",
+      "role": "user",
+      "id": 21
+    },
+    {
+      "fullname": "",
+      "username": "testing1",
+      "email": "testing1@gmail.com",
+      "password": "qwe",
+      "role": "user",
+      "id": 22
+    },
+    {
+      "fullname": "",
+      "username": "testing1",
+      "email": "testing1@gmail.com",
+      "password": "qwe",
+      "role": "user",
+      "id": 23
+    }
+  ],
+  "transactions": [],
+  "products": [],
+  "carts": []
+}
