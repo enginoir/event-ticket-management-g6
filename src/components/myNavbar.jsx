@@ -8,7 +8,7 @@ function myNavbar(props) {
     return (
         <div>
             <Navbar color="light" light>
-                <NavbarBrand>Event management</NavbarBrand>
+                <NavbarBrand>Doodoos Events Management</NavbarBrand>
                 <Nav>
                     {
                         props.userGlobal.username ?
