@@ -1,9 +1,18 @@
-import React, { useState } from "react"
-import { connect } from "react-redux"
-import { AlertIcon, Alert, Button, Input, Container, Heading, Stack, Text, HStack, Link } from "@chakra-ui/react"
-import { loginUser } from "../../redux/actions/user"
-import { Navigate } from "react-router-dom"
-
+import React, { useState } from "react";
+import { connect } from "react-redux";
+import { 
+    AlertIcon, 
+    Alert, 
+    Button, 
+    Input, 
+    Container, 
+    Heading, 
+    Stack, 
+    Text, 
+    HStack, 
+    Link } from "@chakra-ui/react";
+import { loginUser } from "../../redux/actions/user";
+import { useNavigate } from 'react-router-dom';
 
 function Login(props) {
     const inputList = {
@@ -11,7 +20,8 @@ function Login(props) {
         password: "",
     }
 
-    const [state, setState] = useState(inputList)
+    const [state, setState] = useState(inputList);
+    const navigate = useNavigate();
 
     const inputHandler = (key, value) => {
         setState({ ...state, [key]: value });
@@ -19,7 +29,7 @@ function Login(props) {
     };
 
     if(props.userGlobal.username){
-        return <Navigate to="/"/>
+        navigate("/search")
     }
 
 
