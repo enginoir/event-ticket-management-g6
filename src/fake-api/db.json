@@ -200,6 +200,15 @@
       "confirmPassword": "test",
       "role": "user",
       "id": 25
+    },
+    {
+      "fullname": "Super Admin",
+      "username": "superadmin",
+      "email": "admin@gmail.com",
+      "password": "superman!",
+      "confirmPassword": "superman!",
+      "role": "admin",
+      "id": 26
     }
   ],
   "transactions": [],
@@ -339,6 +348,22 @@
       "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
       "description": "mari jelajah dengan sepeda",
       "category": "sport"
+    },
+    {
+      "productName": "Personal Branding",
+      "price": 50000,
+      "productImage": "https://jadwalevent.web.id/wp-content/uploads/2022/07/Event-Edukasi-di-Jeneponto.jpg",
+      "description": "scale up",
+      "category": "education",
+      "id": 18
+    },
+    {
+      "productName": "Personal Branding2",
+      "price": 2222,
+      "productImage": "https://jadwalevent.web.id/wp-content/uploads/2022/07/Event-Edukasi-di-Jeneponto.jpg",
+      "description": "scale up2",
+      "category": "education",
+      "id": 19
     }
   ],
   "carts": []

@@ -8,6 +8,7 @@ import Search from './pages/Search'
 import Register from './pages/auth/Register';
 import Login from './pages/auth/Login';
 import Navbar from './components/myNavbar';
+import Admin from './pages/Admin';
 
 import { connect } from 'react-redux';
 import { userKeepLogin, checkStorage } from './redux/actions/user';
@@ -39,7 +40,7 @@ function App(props) {
             <Route Component={ProductCard} path='/product-card' />
             <Route Component={Register} path='/register' />
             <Route Component={Login} path='/login' />
-
+            <Route path='/admin' element={<Admin />} />
   
   
           </Routes>
