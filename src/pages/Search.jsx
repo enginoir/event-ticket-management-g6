@@ -19,7 +19,7 @@ class Home extends React.Component {
     productList: [],
     page: 1,
     maxPage: 0,
-    itemPerPage: 7,
+    itemPerPage: 8,
     searchProductName: "",
     searchCategory: "",
     filteredProductList: [],

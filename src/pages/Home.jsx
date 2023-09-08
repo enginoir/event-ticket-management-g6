@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Container, Carousel } from 'react-bootstrap';
 import '../assets/Home.css';
 import Axios from 'axios';
+import { connect } from "react-redux";
 import { API_URL } from '../constants/API';
+import Search from '../pages/Search';
 
-const Home = () => {
+const Home = (props) => {
   const [products, setProducts] = useState([]);
   const [currentProductIndex, setCurrentProductIndex] = useState(0);
 
@@ -38,34 +40,55 @@ const Home = () => {
   };
 
   return (
-    <div className="sliderLanding">
-      <Container className="text-center">
-        <Carousel
-          activeIndex={currentProductIndex}
-          onSelect={handleSelect}
-          interval={3000}
-        >
-          {products.map((product, index) => (
-            <Carousel.Item key={product.id}>
+    <div className='homeContainer'>
+      <div className="sliderLanding" id='grad' >
+        <Container className="text-center" >
+          <Carousel
+            activeIndex={currentProductIndex}
+            onSelect={handleSelect}
+            interval={3000}
+          >
+            {products.map((product, index) => (
+              <Carousel.Item key={product.id}>
               <img
                 src={product.productImage}
                 alt={product.productName}
                 className="img-carousel"
+                style={{
+                  display: 'block',
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
+                  height: '300px',
+                  width: '500px',
+                  objectFit: 'cover'
+                }}
               />
               <Carousel.Caption className="carousel-caption">
                 <h3>{product.productName}</h3>
                 <p>{product.description}</p>
               </Carousel.Caption>
             </Carousel.Item>
-          ))}
-        </Carousel>
-        <div className="mt-5 text-center">
-          <h1>Interested?</h1>
-          <p>Explore more by logging in</p>
-        </div>
-      </Container>
+            
+            ))}
+          </Carousel>
+        </Container>
+      </div>
+      {
+        props.userGlobal.username ?
+          <Search />
+          : <div className="mt-5 text-center">
+            <h1>Interested?</h1>
+            <p>Explore more by logging in</p>
+          </div>
+      }
     </div>
   );
 };
 
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    userGlobal: state.user
+  }
+}
+
+export default connect(mapStateToProps)(Home);

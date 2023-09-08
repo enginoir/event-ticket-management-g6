@@ -29,7 +29,7 @@ function Login(props) {
     };
 
     if(props.userGlobal.username){
-        navigate("/search")
+        navigate("/")
     }
 
 

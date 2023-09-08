@@ -13,6 +13,7 @@ import {
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { logoutUser } from "../redux/actions/user";
+import { color } from "@chakra-ui/react";
 
 function MyNavbar(props) {
   const handleLogout = () => {
@@ -31,7 +32,7 @@ function MyNavbar(props) {
           }}
         >
           <div style={{ display: "flex", alignItems: "center" }}>
-            <NavbarBrand>Doodoos Events Management</NavbarBrand>
+          <NavbarBrand style={{marginLeft:30}}> <Link style={{textDecoration: 'none', color:"black"}} to="/">Event management</Link></NavbarBrand>
             <Nav>
               {props.userGlobal.username ? (
                 <>
@@ -55,16 +56,16 @@ function MyNavbar(props) {
                       ) : (
                         <>
                           <DropdownItem>
-                            <Link to="/search">Search</Link>
+                            <Link to="/search" style={{textDecoration: 'none', color:"black"}}>Search</Link>
                           </DropdownItem>
                           <DropdownItem>
-                            <Link to="/profile">Profile</Link>
+                            <Link to="/profile" style={{textDecoration: 'none', color:"black"}}>Profile</Link>
                           </DropdownItem>
                           <DropdownItem>
-                            <Link to="/carts">Carts</Link>
+                            <Link to="/carts" style={{textDecoration: 'none', color:"black"}}>Carts</Link>
                           </DropdownItem>
                           <DropdownItem>
-                            <Link to="/account-settings">Account Settings</Link>
+                            <Link to="/account-settings" style={{textDecoration: 'none', color:"black"}}>Account Settings</Link>
                           </DropdownItem>
                         </>
                       )}

@@ -5,6 +5,8 @@ import { connect } from "react-redux"
 import { Button } from "@chakra-ui/react"
 import { Alert, AlertIcon, Input, Container, Heading, Stack, Text, HStack, Link } from "@chakra-ui/react"
 import { API_URL } from "../../constants/API"
+import { useNavigate } from 'react-router-dom';
+
 
 function Register(props) {
 
@@ -25,7 +27,11 @@ function Register(props) {
 
     const [alert, setAlert] = useState({ show: false, message: "" });
 
+    const navigate = useNavigate();
 
+   if(props.userGlobal.username){
+        navigate("/")
+    }
 
 
     return (
@@ -114,8 +120,11 @@ function Register(props) {
     )
 }
 
-const mapStateToProps = () => {
-    return {}
+const mapStateToProps = (state) => {
+    return {
+        userGlobal: state.user,
+
+    }
 }
 
 const mapDispatchToProps = {
