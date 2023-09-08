@@ -358,11 +358,11 @@
       "id": 18
     },
     {
-      "productName": "Personal Branding2",
-      "price": 2222,
+      "productName": "abc",
+      "price": 123,
       "productImage": "https://jadwalevent.web.id/wp-content/uploads/2022/07/Event-Edukasi-di-Jeneponto.jpg",
-      "description": "scale up2",
-      "category": "education",
+      "description": "abc",
+      "category": "sport",
       "id": 19
     }
   ],

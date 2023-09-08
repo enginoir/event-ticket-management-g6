@@ -55,6 +55,9 @@ function MyNavbar(props) {
                       ) : (
                         <>
                           <DropdownItem>
+                            <Link to="/search">Search</Link>
+                          </DropdownItem>
+                          <DropdownItem>
                             <Link to="/profile">Profile</Link>
                           </DropdownItem>
                           <DropdownItem>
