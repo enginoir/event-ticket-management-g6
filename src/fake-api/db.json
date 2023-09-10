@@ -209,6 +209,42 @@
       "confirmPassword": "superman!",
       "role": "admin",
       "id": 26
+    },
+    {
+      "fullname": "test5",
+      "username": "test5",
+      "email": "test5@gmail.com",
+      "password": "password",
+      "confirmPassword": "password",
+      "role": "user",
+      "id": 27
+    },
+    {
+      "fullname": "tes6",
+      "username": "tes6",
+      "email": "tes6@gmail.com",
+      "password": "password",
+      "confirmPassword": "password",
+      "role": "user",
+      "id": 28
+    },
+    {
+      "fullname": "tes7",
+      "username": "tes7",
+      "email": "tes7@gmail.com",
+      "password": "password",
+      "confirmPassword": "password",
+      "role": "user",
+      "id": 29
+    },
+    {
+      "fullname": "tes8",
+      "username": "tes8",
+      "email": "tes8@gmail.com",
+      "password": "tes8",
+      "confirmPassword": "tes8",
+      "role": "user",
+      "id": 30
     }
   ],
   "transactions": [],
@@ -356,15 +392,18 @@
       "description": "scale up",
       "category": "education",
       "id": 18
-    },
-    {
-      "productName": "abc",
-      "price": 123,
-      "productImage": "https://jadwalevent.web.id/wp-content/uploads/2022/07/Event-Edukasi-di-Jeneponto.jpg",
-      "description": "abc",
-      "category": "sport",
-      "id": 19
     }
   ],
-  "carts": []
+  "carts": [],
+  "referralCode": [
+    {
+      "referral": ""
+    },
+    {
+      "referral": "ABC"
+    },
+    {
+      "referral": "REFERRAL"
+    }
+  ]
 }
