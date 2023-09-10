@@ -16,6 +16,7 @@ import ProductCard from './components/ProductCard';
 import ProductDetail from './pages/ProductDetail';
 import { getCartData } from './redux/actions/cart'
 import History from "./pages/History"
+import Profile from "./pages/Profile"
 
 function App(props) {
     useEffect(() => {
@@ -35,7 +36,7 @@ function App(props) {
         {/* <a href="/home"> Home </a> |
         <a href="/register"> Register </a> |
         <a href="/login"> Login </a> | */}
-  
+
         <BrowserRouter>
           <Navbar />
           <Routes>
@@ -48,16 +49,14 @@ function App(props) {
             <Route Component={ProductDetail} path='/product-detail/:productId'/>
             <Route Component={Cart} path='/cart'/>
             <Route Component={History} path='/history'/>
-          
-            
-  
-  
+            <Route Component={Profile} path='/user-profile'/>
+
           </Routes>
         </BrowserRouter>
       </div>
-  
+
     );
-  } 
+  }
   return (
     <div>
       Loading . . .
@@ -65,7 +64,7 @@ function App(props) {
   )
 
 
-  
+
 }
 
 const mapStateToProps = (state) => {
