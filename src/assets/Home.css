@@ -2,7 +2,8 @@
   height: auto;  
 } */
 #grad {
-  background-image: linear-gradient(to right,rgb(96, 96, 96),grey,rgb(216, 215, 215),grey,rgb(96, 96, 96));
+  /* background-image: linear-gradient(to right,White,grey,rgb(96, 96, 96),grey,white); */
+  /* background-color: ; */
 }
 
 .sliderLanding {
@@ -45,12 +46,12 @@
     }
   }
 
-  .carousel-caption p {
-    color: #000; 
+  .carousel-caption p,h3 {
+    color: #ffffff; 
   }
 
   .carousel-caption {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.616);
     padding: 10px;
     border-radius: 5px;
     text-align: center;

@@ -23,13 +23,11 @@ const Home = (props) => {
 
   useEffect(() => {
     fetchProducts();
-
     const interval = setInterval(() => {
       setCurrentProductIndex((prevIndex) =>
         prevIndex === products.length - 1 ? 0 : prevIndex + 1
       );
     }, 3000);
-
     return () => {
       clearInterval(interval);
     };
@@ -47,9 +45,10 @@ const Home = (props) => {
             activeIndex={currentProductIndex}
             onSelect={handleSelect}
             interval={3000}
+            variant="dark"
           >
             {products.map((product, index) => (
-              <Carousel.Item key={product.id}>
+              <Carousel.Item key={product.id} >
               <img
                 src={product.productImage}
                 alt={product.productName}
@@ -59,7 +58,7 @@ const Home = (props) => {
                   marginLeft: 'auto',
                   marginRight: 'auto',
                   height: '300px',
-                  width: '500px',
+                  width: '1000px',
                   objectFit: 'cover'
                 }}
               />
