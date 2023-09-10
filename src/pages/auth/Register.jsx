@@ -1,10 +1,9 @@
 import React, { useState } from "react"
-import { registerUser, checkEmail } from "../../redux/actions/user"
+import { registerUser, checkEmail, checkReferral } from "../../redux/actions/user"
 // import { checkEmail } from "../../redux/actions/user"
 import { connect } from "react-redux"
 import { Button } from "@chakra-ui/react"
 import { Alert, AlertIcon, Input, Container, Heading, Stack, Text, HStack, Link } from "@chakra-ui/react"
-import { API_URL } from "../../constants/API"
 import { useNavigate } from 'react-router-dom';
 
 
@@ -16,6 +15,7 @@ function Register(props) {
         email: "",
         password: "",
         confirmPassword: "",
+        referralCode: "",
     }
 
     const [state, setState] = useState(inputList)
@@ -29,7 +29,7 @@ function Register(props) {
 
     const navigate = useNavigate();
 
-   if(props.userGlobal.username){
+    if (props.userGlobal.username) {
         navigate("/")
     }
 
@@ -64,6 +64,15 @@ function Register(props) {
                         type="password"
                         required
                     />
+                    <Input
+                        bgColor="white"
+                        name="referralCode"
+                        onChange={(e) => inputHandler("referralCode", e.target.value)}
+                        placeholder="Referral Code"
+                        type="text" 
+                        required
+                    />
+
                     {alert.show && (
                         <Alert status="error">
                             <AlertIcon />
@@ -89,6 +98,7 @@ function Register(props) {
                                     } else {
                                         // Check if the email already exists in the database
                                         const emailExists = await props.checkEmail(state.email);
+                                        const referralExists = await props.checkReferral(state.referralCode);
                                         if (emailExists) {
                                             // If the email already exists, show an alert
                                             setAlert({ show: true, message: "This email is already in use. Please use another email." });
@@ -96,6 +106,10 @@ function Register(props) {
                                         else if (state.password !== state.confirmPassword) {
                                             // If the passwords do not match, show an alert
                                             setAlert({ show: true, message: "The passwords do not match. Please try again." });
+                                        }
+                                        else if(!referralExists){
+                                            console.log(referralExists)
+                                            setAlert({ show: true, message: "Your Referral Code does not exist" });
                                         }
                                         else {
                                             // If the email does not exist, submit the form
@@ -130,7 +144,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = {
     registerUser,
     checkEmail,
-
+    checkReferral,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Register);

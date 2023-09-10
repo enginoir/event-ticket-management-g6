@@ -209,6 +209,42 @@
       "confirmPassword": "superman!",
       "role": "admin",
       "id": 26
+    },
+    {
+      "fullname": "test5",
+      "username": "test5",
+      "email": "test5@gmail.com",
+      "password": "password",
+      "confirmPassword": "password",
+      "role": "user",
+      "id": 27
+    },
+    {
+      "fullname": "tes6",
+      "username": "tes6",
+      "email": "tes6@gmail.com",
+      "password": "password",
+      "confirmPassword": "password",
+      "role": "user",
+      "id": 28
+    },
+    {
+      "fullname": "tes7",
+      "username": "tes7",
+      "email": "tes7@gmail.com",
+      "password": "password",
+      "confirmPassword": "password",
+      "role": "user",
+      "id": 29
+    },
+    {
+      "fullname": "tes8",
+      "username": "tes8",
+      "email": "tes8@gmail.com",
+      "password": "tes8",
+      "confirmPassword": "tes8",
+      "role": "user",
+      "id": 30
     }
   ],
   "transactions": [],
@@ -356,34 +392,18 @@
       "description": "scale up",
       "category": "education",
       "id": 18
-    },
-    {
-      "productName": "abc",
-      "price": 123,
-      "productImage": "https://jadwalevent.web.id/wp-content/uploads/2022/07/Event-Edukasi-di-Jeneponto.jpg",
-      "description": "abc",
-      "category": "sport",
-      "id": 19
     }
   ],
-  "carts": [
+  "carts": [],
+  "referralCode": [
     {
-      "userId": 25,
-      "productId": 1,
-      "price": 20000,
-      "productName": "Sayur Mayur",
-      "productImage": "https://pasla.jambiprov.go.id/wp-content/uploads/2023/03/pengertian-pasar.png",
-      "quantity": 1,
-      "id": 1
+      "referral": ""
     },
     {
-      "userId": 25,
-      "productId": 2,
-      "price": 25000,
-      "productName": "Master Chef",
-      "productImage": "https://static.rctiplus.id/media/1000/files/fta_rcti/Banner_Landscape/snapshot/241222/master_chef_indonesia_season_10_potrait.jpg",
-      "quantity": 1,
-      "id": 2
+      "referral": "ABC"
+    },
+    {
+      "referral": "REFERRAL"
     }
-  ]
+  ],
 }
