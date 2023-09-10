@@ -56,16 +56,16 @@ function MyNavbar(props) {
                       ) : (
                         <>
                           <DropdownItem>
-                            <Link to="/search" style={{textDecoration: 'none', color:"black"}}>Search</Link>
+                            <Link to="/" style={{textDecoration: 'none', color:"black"}}>Home-Search</Link>
                           </DropdownItem>
                           <DropdownItem>
                             <Link to="/profile" style={{textDecoration: 'none', color:"black"}}>Profile</Link>
                           </DropdownItem>
                           <DropdownItem>
-                            <Link to="/carts" style={{textDecoration: 'none', color:"black"}}>Carts</Link>
+                            <Link to="/cart" style={{textDecoration: 'none', color:"black"}}>Cart ({props.cartGlobal.cartList.length})</Link>
                           </DropdownItem>
                           <DropdownItem>
-                            <Link to="/account-settings" style={{textDecoration: 'none', color:"black"}}>Account Settings</Link>
+                            <Link to="/account-settings" style={{textDecoration: 'none', color:"black"}}>Transaction History</Link>
                           </DropdownItem>
                         </>
                       )}
@@ -109,6 +109,7 @@ function MyNavbar(props) {
 const mapStateToProps = (state) => {
   return {
     userGlobal: state.user,
+    cartGlobal: state.cart,
   };
 };
 
