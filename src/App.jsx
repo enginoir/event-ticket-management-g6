@@ -15,6 +15,7 @@ import { userKeepLogin, checkStorage } from './redux/actions/user';
 import ProductCard from './components/ProductCard';
 import ProductDetail from './pages/ProductDetail';
 import { getCartData } from './redux/actions/cart'
+import History from "./pages/History"
 
 function App(props) {
     useEffect(() => {

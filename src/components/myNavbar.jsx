@@ -65,7 +65,7 @@ function MyNavbar(props) {
                             <Link to="/cart" style={{textDecoration: 'none', color:"black"}}>Cart ({props.cartGlobal.cartList.length})</Link>
                           </DropdownItem>
                           <DropdownItem>
-                            <Link to="/account-settings" style={{textDecoration: 'none', color:"black"}}>Transaction History</Link>
+                            <Link to="/history" style={{textDecoration: 'none', color:"black"}}>Transaction History</Link>
                           </DropdownItem>
                         </>
                       )}
