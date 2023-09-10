@@ -59,7 +59,7 @@ function MyNavbar(props) {
                             <Link to="/" style={{textDecoration: 'none', color:"black"}}>Home-Search</Link>
                           </DropdownItem>
                           <DropdownItem>
-                            <Link to="/profile" style={{textDecoration: 'none', color:"black"}}>Profile</Link>
+                            <Link to="/user-profile" style={{textDecoration: 'none', color:"black"}}>Profile</Link>
                           </DropdownItem>
                           <DropdownItem>
                             <Link to="/cart" style={{textDecoration: 'none', color:"black"}}>Cart ({props.cartGlobal.cartList.length})</Link>
