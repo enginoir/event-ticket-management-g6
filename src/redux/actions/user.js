@@ -81,6 +81,22 @@ export const checkEmail = (email) => {
     };
 };
 
+export const checkReferral = (referral) => {
+    return (dispatch) => {
+        return fetch(`${API_URL}/referralCode?referral=${referral}`)
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.length > 0) {
+                    // Email already exists
+                    return true;
+                } else {
+                    // Email does not exist
+                    return false;
+                }
+            });
+    };
+};
+
 // export const checkEmail = ({ email }) => {
 //     return (dispatch) => {
 //         Axios.get(`${API_URL}/users`, {
