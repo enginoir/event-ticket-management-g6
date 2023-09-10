@@ -247,7 +247,37 @@
       "id": 30
     }
   ],
-  "transactions": [],
+  "transactions": [
+    {
+      "userId": 25,
+      "address": "test",
+      "recipientName": "test",
+      "totalPrice": 47250,
+      "totalPayment": 50000,
+      "transactionDate": "10-9-2023",
+      "transactionItems": [
+        {
+          "userId": 25,
+          "productId": 1,
+          "price": 20000,
+          "productName": "Sayur Mayur",
+          "productImage": "https://pasla.jambiprov.go.id/wp-content/uploads/2023/03/pengertian-pasar.png",
+          "quantity": 1,
+          "id": 1
+        },
+        {
+          "userId": 25,
+          "productId": 2,
+          "price": 25000,
+          "productName": "Master Chef",
+          "productImage": "https://static.rctiplus.id/media/1000/files/fta_rcti/Banner_Landscape/snapshot/241222/master_chef_indonesia_season_10_potrait.jpg",
+          "quantity": 1,
+          "id": 2
+        }
+      ],
+      "id": 1
+    }
+  ],
   "products": [
     {
       "id": 1,
@@ -405,5 +435,5 @@
     {
       "referral": "REFERRAL"
     }
-  ],
+  ]
 }
