@@ -1,0 +1,9 @@
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity {
+    margin: 0 0 0 10px; /* Add spacing between quantity and buttons */
+}

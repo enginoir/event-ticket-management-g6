@@ -9,18 +9,21 @@ import Register from './pages/auth/Register';
 import Login from './pages/auth/Login';
 import Navbar from './components/myNavbar';
 import Admin from './pages/Admin';
-
+import Cart from './pages/Cart';
 import { connect } from 'react-redux';
 import { userKeepLogin, checkStorage } from './redux/actions/user';
 import ProductCard from './components/ProductCard';
+import ProductDetail from './pages/ProductDetail';
+import { getCartData } from './redux/actions/cart'
 
 function App(props) {
     useEffect(() => {
     const userlocalStorage = localStorage.getItem("userDataEvent");
     if (userlocalStorage) {
-      const userData = JSON.parse(userlocalStorage)
-      props.userKeepLogin(userData)
-    }else {
+      const userData = JSON.parse(userlocalStorage);
+      props.userKeepLogin(userData);
+      props.getCartData(userData.id);
+    } else {
       props.checkStorage()
     }
   }, []);
@@ -37,10 +40,15 @@ function App(props) {
           <Routes>
             <Route Component={Home} path='/' />
             <Route Component={Search} path='/search' />
+            <Route path='/admin' element={<Admin />} />
             <Route Component={ProductCard} path='/product-card' />
             <Route Component={Register} path='/register' />
             <Route Component={Login} path='/login' />
-            <Route path='/admin' element={<Admin />} />
+            <Route Component={ProductDetail} path='/product-detail/:productId'/>
+            <Route Component={Cart} path='/cart'/>
+            <Route Component={History} path='/history'/>
+          
+            
   
   
           </Routes>
@@ -69,6 +77,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = {
   userKeepLogin,
   checkStorage,
+  getCartData
 }
 
 
