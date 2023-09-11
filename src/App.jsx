@@ -33,9 +33,6 @@ function App(props) {
   if (props.userGlobal.storageIsChecked ){
     return (
       <div className='App'>
-        {/* <a href="/home"> Home </a> |
-        <a href="/register"> Register </a> |
-        <a href="/login"> Login </a> | */}
 
         <BrowserRouter>
           <Navbar />
