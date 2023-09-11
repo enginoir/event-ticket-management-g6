@@ -13,7 +13,7 @@ class Admin extends Component {
         addProductImage: "",
         addDescription: "",
         addCategory: "",
-        
+
         editId:0,
 
         editProductName: "",
@@ -33,7 +33,7 @@ class Admin extends Component {
       });
   };
 
-  
+
   editToggle = (editData) => {
     this.setState({
         editId: editData.id, 
@@ -147,7 +147,7 @@ class Admin extends Component {
             addProductImage: "",
             addDescription: "",
             addCategory: "",
-         })
+        })
     })
     .catch(() => {
         alert("Terjadi Kesalahan di Server")
@@ -164,7 +164,7 @@ class Admin extends Component {
     this.fetchProducts();
   }
 
-  render() {  
+  render() {
     if (this.props.userGlobal.role !== "admin") {
         return (
             <div style={{ textAlign: "center" }}>

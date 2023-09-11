@@ -10,17 +10,19 @@ function Profile(props) {
     const [newEmail, setNewEmail] = useState("");
     const [newPassword, setNewPassword] = useState("");
     const [newFullName, setNewFullName] = useState("");
+    const [newRole, setNewRole] = useState(""); // State for role selection
     const [profilePictureUrl, setProfilePictureUrl] = useState("");
     const [isEditingProfilePicture, setIsEditingProfilePicture] = useState(false);
 
     // Default profile picture URL
-    const defaultProfilePictureUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Nuhe-dVcxSaXtHCE83tzKyUUmh390EHkyes67K25ST4uIvtn3uIG-i_6yduiJR2rhFE&usqp=CAU";
+    const defaultProfilePictureUrl = "https://png.pngtree.com/png-vector/20190114/ourlarge/pngtree-vector-add-user-icon-png-image_313043.jpg";
 
     // Fetch user data
     const fetchUserData = () => {
         Axios.get(`${API_URL}/users/${props.userGlobal.id}`)
             .then((result) => {
                 setUserData(result.data);
+                setNewRole(result.data.role); // Set initial role
             })
             .catch(() => {
                 alert("Terjadi kesalahan di server");
@@ -70,6 +72,10 @@ function Profile(props) {
         setNewFullName(e.target.value);
     };
 
+    const handleRoleChange = (e) => {
+        setNewRole(e.target.value);
+    };
+
     const handleProfilePictureUrlChange = (e) => {
         setProfilePictureUrl(e.target.value);
     };
@@ -95,6 +101,7 @@ function Profile(props) {
             email: newEmail,
             password: newPassword,
             fullname: newFullName,
+            role: newRole, // Include the user's role
         };
 
         // Send a PUT request to update user data
@@ -171,6 +178,9 @@ function Profile(props) {
                                 <strong>Password:</strong> {userData.password}
                             </p>
                             <p>
+                                <strong>Role:</strong> {userData.role}
+                            </p>
+                            <p>
                                 <strong>Profile Picture:</strong>
                             </p>
                             {isEditingProfilePicture ? (
@@ -238,6 +248,18 @@ function Profile(props) {
                                         value={newFullName}
                                         onChange={handleFullNameChange}
                                     />
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="newRole">New Role</label>
+                                    <select
+                                        className="form-control"
+                                        id="newRole"
+                                        value={newRole}
+                                        onChange={handleRoleChange}
+                                    >
+                                        <option value="user">User</option>
+                                        <option value="organizer">Organizer</option>
+                                    </select>
                                 </div>
                                 <button type="submit" className="btn btn-primary">
                                     Save Changes

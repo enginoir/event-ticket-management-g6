@@ -195,10 +195,10 @@
     {
       "fullname": "testss",
       "username": "test",
-      "email": "testss@gmail.com",
-      "password": "testss",
-      "confirmPassword": "test",
-      "role": "user",
+      "email": "test@gmail.com",
+      "password": "tests",
+      "confirmPassword": "tests",
+      "role": "organizer",
       "id": 25
     },
     {
@@ -216,7 +216,7 @@
       "email": "test5@gmail.com",
       "password": "password",
       "confirmPassword": "password",
-      "role": "user",
+      "role": "organizer",
       "id": 27
     },
     {
@@ -416,12 +416,46 @@
       "category": "sport"
     },
     {
-      "productName": "Personal Branding",
-      "price": 50000,
+      "productName": "Jelajah Bumi Lasinrang 23",
+      "price": 6535534,
       "productImage": "https://jadwalevent.web.id/wp-content/uploads/2022/07/Event-Edukasi-di-Jeneponto.jpg",
-      "description": "scale up",
-      "category": "education",
+      "description": "mari jelajah dengan sepeda onthel",
+      "category": "sport",
       "id": 18
+    },
+    {
+      "productName": "Jelajah Bumi Lasinrang 15",
+      "price": 1241232141231,
+      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
+      "description": "mari jelajah dengan sepeda onthel",
+      "category": "sport",
+      "id": 19
+    },
+    {
+      "productName": "Jelajah Bumi",
+      "price": 421321355,
+      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
+      "description": "mari jelajah dengan sepeda onthelsss",
+      "category": "sport",
+      "id": 20
+    },
+    {
+      "productName": "Jelajah Bumi232",
+      "price": "2",
+      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
+      "description": "mari jelajah dengan sepeda onthelsss",
+      "addCategory": "sport",
+      "organizerId": 25,
+      "id": 21
+    },
+    {
+      "productName": "Jelajah Bumi230",
+      "price": "44213",
+      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
+      "description": "mari jelajah dengan sepeda onthelx",
+      "addCategory": "sport",
+      "organizerId": 25,
+      "id": 22
     }
   ],
   "carts": [

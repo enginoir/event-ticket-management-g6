@@ -2,6 +2,9 @@ import './App.css';
 import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.css"
+import { connect } from 'react-redux';
+import { userKeepLogin, checkStorage } from './redux/actions/user';
+import { getCartData } from './redux/actions/cart'
 
 import Home from './pages/Home';
 import Search from './pages/Search'
@@ -10,13 +13,11 @@ import Login from './pages/auth/Login';
 import Navbar from './components/myNavbar';
 import Admin from './pages/Admin';
 import Cart from './pages/Cart';
-import { connect } from 'react-redux';
-import { userKeepLogin, checkStorage } from './redux/actions/user';
 import ProductCard from './components/ProductCard';
 import ProductDetail from './pages/ProductDetail';
-import { getCartData } from './redux/actions/cart'
 import History from "./pages/History"
 import Profile from "./pages/Profile"
+import Organizer from "./pages/Organizer"
 
 function App(props) {
     useEffect(() => {
@@ -47,6 +48,7 @@ function App(props) {
             <Route Component={Cart} path='/cart'/>
             <Route Component={History} path='/history'/>
             <Route Component={Profile} path='/user-profile'/>
+            <Route Component={Organizer} path='/organizer-dashboard'/>
 
           </Routes>
         </BrowserRouter>
