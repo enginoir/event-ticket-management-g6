@@ -53,7 +53,6 @@ function ProductCard(props) {
             <img src={props.productData.productImage} alt="" />
             <div className="mt-1">
                 <div>
-                    {/* localhost:3000/product-detail/{id barang} */}
                     <Link to={`/product-detail/${props.productData.id}`}>
                         <h4>{props.productData.productName}</h4>
                     </Link>
