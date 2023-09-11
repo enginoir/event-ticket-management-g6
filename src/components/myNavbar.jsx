@@ -32,7 +32,12 @@ function MyNavbar(props) {
           }}
         >
           <div style={{ display: "flex", alignItems: "center" }}>
-          <NavbarBrand style={{marginLeft:30}}> <Link style={{textDecoration: 'none', color:"black"}} to="/">Event management</Link></NavbarBrand>
+            <NavbarBrand style={{ marginLeft: 30 }}>
+              {" "}
+              <Link style={{ textDecoration: "none", color: "black" }} to="/">
+                Event management
+              </Link>
+            </NavbarBrand>
             <Nav>
               {props.userGlobal.username ? (
                 <>
@@ -56,17 +61,50 @@ function MyNavbar(props) {
                       ) : (
                         <>
                           <DropdownItem>
-                            <Link to="/" style={{textDecoration: 'none', color:"black"}}>Home-Search</Link>
+                            <Link
+                              to="/"
+                              style={{ textDecoration: "none", color: "black" }}
+                            >
+                              Home-Search
+                            </Link>
                           </DropdownItem>
                           <DropdownItem>
-                            <Link to="/user-profile" style={{textDecoration: 'none', color:"black"}}>Profile</Link>
+                            <Link
+                              to="/user-profile"
+                              style={{ textDecoration: "none", color: "black" }}
+                            >
+                              Profile
+                            </Link>
                           </DropdownItem>
                           <DropdownItem>
-                            <Link to="/cart" style={{textDecoration: 'none', color:"black"}}>Cart ({props.cartGlobal.cartList.length})</Link>
+                            <Link
+                              to="/cart"
+                              style={{ textDecoration: "none", color: "black" }}
+                            >
+                              Cart ({props.cartGlobal.cartList.length})
+                            </Link>
                           </DropdownItem>
                           <DropdownItem>
-                            <Link to="/history" style={{textDecoration: 'none', color:"black"}}>Transaction History</Link>
+                            <Link
+                              to="/history"
+                              style={{ textDecoration: "none", color: "black" }}
+                            >
+                              Transaction History
+                            </Link>
                           </DropdownItem>
+                          {props.userGlobal.role === "organizer" && (
+                            <DropdownItem>
+                              <Link
+                                to="/organizer-dashboard"
+                                style={{
+                                  textDecoration: "none",
+                                  color: "black",
+                                }}
+                              >
+                                Organizer Dashboard
+                              </Link>
+                            </DropdownItem>
+                          )}
                         </>
                       )}
                       <DropdownItem divider />
