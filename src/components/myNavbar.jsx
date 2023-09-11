@@ -13,7 +13,6 @@ import {
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { logoutUser } from "../redux/actions/user";
-import { color } from "@chakra-ui/react";
 
 function MyNavbar(props) {
   const handleLogout = () => {
