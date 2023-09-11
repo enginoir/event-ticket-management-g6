@@ -6,12 +6,15 @@ import { connect } from "react-redux";
 import "../assets/styles/ProductDetail.css";
 import { getCartData } from '../redux/actions/cart'
 
+import ReactStars from "react-rating-stars-component";
+import { Input } from "reactstrap";
+import CommentSection from "../components/Comment";
+
 function ProductDetail(props) {
     const { productId } = useParams();
-
     const [productData, setProductData] = useState({});
     const [productNotFound, setProductNotFound] = useState(false);
-    const [quantity, setQuantity] = useState( 1 );
+    const [quantity, setQuantity] = useState(1);
 
     const fetchProductData = () => {
         Axios.get(`${API_URL}/products/${productId}`)
@@ -43,41 +46,45 @@ function ProductDetail(props) {
                 productId: productData.id,
             }
         })
-        .then((result) => {
-            if (result.data.length) {
-                Axios.patch(`${API_URL}/carts/${result.data[0].id}`, {
-                    quantity: result.data[0].quantity + quantity
-                })
-                .then(() => {
-                    alert("Berhasil menambahkan barang");
-                    props.getCartData(props.userGlobal.id)
-                })
-                .catch(() => {
-                    alert("Terjadi kesalahan di server");
-                })
-            } else {
-                Axios.post(`${API_URL}/carts`, {
-                    userId: props.userGlobal.id,
-                    productId: productData.id,
-                    price: productData.price,
-                    productName: productData.productName,
-                    productImage: productData.productImage,
-                    quantity: quantity,
-                })
-                .then(() => {
-                    alert("Berhasil menambahkan barang");
-                    props.getCartData(props.userGlobal.id)
-                })
-                .catch(() => {
-                    alert("Terjadi kesalahan di server");
-                });
-            };
-        })
+            .then((result) => {
+                if (result.data.length) {
+                    Axios.patch(`${API_URL}/carts/${result.data[0].id}`, {
+                        quantity: result.data[0].quantity + quantity
+                    })
+                        .then(() => {
+                            alert("Berhasil menambahkan barang");
+                            props.getCartData(props.userGlobal.id)
+                        })
+                        .catch(() => {
+                            alert("Terjadi kesalahan di server");
+                        })
+                } else {
+                    Axios.post(`${API_URL}/carts`, {
+                        userId: props.userGlobal.id,
+                        productId: productData.id,
+                        price: productData.price,
+                        productName: productData.productName,
+                        productImage: productData.productImage,
+                        quantity: quantity,
+                    })
+                        .then(() => {
+                            alert("Berhasil menambahkan barang");
+                            props.getCartData(props.userGlobal.id)
+                        })
+                        .catch(() => {
+                            alert("Terjadi kesalahan di server");
+                        });
+                };
+            })
     }
 
     useEffect(() => {
         fetchProductData();
     }, [productId]);
+
+    const ratingChanged = (newRating) => {
+        console.log(newRating);
+    };
 
     return (
         <div className="container">
@@ -93,14 +100,17 @@ function ProductDetail(props) {
                         />
                     </div>
                     <div className="col-6 d-flex flex-column justify-content-center">
+                        
                         <h4>{productData.productName}</h4>
                         <h5>Rp {productData.price}</h5>
                         <p>{productData.description}</p>
-                        <div className="d-flex flex-row align-items-center">
-                            <button onClick={() => qtyBtnHandler("decrement")} className="btn btn-primary mr-4">
+                        <div className="d-flex flex-row align-items-center justify-content-center">
+                            <button onClick={() => qtyBtnHandler("decrement")} className="btn btn-primary mr-4" style={{ marginLeft: 20 }}>
                                 -
                             </button>
-                            {quantity}
+                            <div style={{ marginLeft: 20 }}>
+                                {quantity}
+                            </div>
                             <button onClick={() => qtyBtnHandler("increment")} className="btn btn-primary mx-4">
                                 +
                             </button>
@@ -108,7 +118,10 @@ function ProductDetail(props) {
                         <button onClick={addToCartHandler} className="btn btn-success mt-3">
                             Add to cart
                         </button>
+                       
+                        <CommentSection/>
                     </div>
+
                 </div>
             )}
         </div>

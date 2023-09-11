@@ -97,24 +97,6 @@ export const checkReferral = (referral) => {
     };
 };
 
-// export const checkEmail = ({ email }) => {
-//     return (dispatch) => {
-//         Axios.get(`${API_URL}/users`, {
-//             params: {
-//                 email,
-//             }
-//         }).then((result) => {
-//             if (result.data.length) {
-//                 dispatch({
-//                     type: "USER_EMAIL",
-//                     payload: "email sudah terdaftar"
-//                 })
-//             }
-//         })
-//     }
-// }
-
-
 
 export const logoutUser = () => {
     localStorage.removeItem("userDataEvent")
@@ -122,8 +104,6 @@ export const logoutUser = () => {
         type: "USER_LOGOUT"
     }
 }
-
-
 
 export const userKeepLogin = (userData) => {
     return (dispatch) => {
