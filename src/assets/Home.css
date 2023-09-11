@@ -1,13 +1,5 @@
-/* .homeContainer {
-  height: auto;  
-} */
-#grad {
-  /* background-image: linear-gradient(to right,White,grey,rgb(96, 96, 96),grey,white); */
-  /* background-color: ; */
-}
 
 .sliderLanding {
-  /* background-color: black; */
   display: flex;
   flex-direction: column;
   justify-content: center;

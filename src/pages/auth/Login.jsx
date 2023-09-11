@@ -25,7 +25,6 @@ function Login(props) {
 
     const inputHandler = (key, value) => {
         setState({ ...state, [key]: value });
-        // console.log(state);
     };
 
     if(props.userGlobal.username){
