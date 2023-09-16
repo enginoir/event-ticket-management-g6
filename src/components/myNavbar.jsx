@@ -35,7 +35,7 @@ function MyNavbar(props) {
             <NavbarBrand style={{ marginLeft: 30 }}>
               {" "}
               <Link style={{ textDecoration: "none", color: "black" }} to="/">
-                Event management
+                DoDooS Event
               </Link>
             </NavbarBrand>
             <Nav>

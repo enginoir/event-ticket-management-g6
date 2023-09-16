@@ -60,7 +60,7 @@
       "username": "arnold",
       "email": "arnold@gmail.com",
       "password": "password",
-      "role": "user",
+      "role": "organizer",
       "id": 8
     },
     {
@@ -245,6 +245,24 @@
       "confirmPassword": "tes8",
       "role": "user",
       "id": 30
+    },
+    {
+      "fullname": "Evelio Excellenta",
+      "username": "evelio",
+      "email": "evelio@gmail.com",
+      "password": "password",
+      "confirmPassword": "password",
+      "role": "user",
+      "id": 31
+    },
+    {
+      "fullname": "daffa",
+      "username": "daffa",
+      "email": "daffa@gmail.com",
+      "password": "password",
+      "confirmPassword": "password",
+      "role": "user",
+      "id": 32
     }
   ],
   "transactions": [
@@ -276,6 +294,35 @@
         }
       ],
       "id": 1
+    },
+    {
+      "userId": 32,
+      "address": "daffa",
+      "recipientName": "daffa",
+      "totalPrice": 94500,
+      "totalPayment": 20000000,
+      "transactionDate": "15-9-2023",
+      "transactionItems": [
+        {
+          "userId": 32,
+          "productId": 1,
+          "price": 20000,
+          "productName": "Sayur Mayur",
+          "productImage": "https://pasla.jambiprov.go.id/wp-content/uploads/2023/03/pengertian-pasar.png",
+          "quantity": 2,
+          "id": 5
+        },
+        {
+          "userId": 32,
+          "productId": 3,
+          "price": 50000,
+          "productName": "Panjat Tebing",
+          "productImage": "https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/11/11043249/mengenal-olahraga-panjat-tebing-manfaat-dan-tekniknya-halodoc.jpg",
+          "quantity": 1,
+          "id": 6
+        }
+      ],
+      "id": 2
     }
   ],
   "products": [
@@ -449,12 +496,11 @@
       "id": 21
     },
     {
-      "productName": "Jelajah Bumi230",
-      "price": "44213",
-      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
-      "description": "mari jelajah dengan sepeda onthelx",
-      "addCategory": "sport",
-      "organizerId": 25,
+      "productName": "abc",
+      "price": 200000,
+      "productImage": "https://berita.depok.go.id/storage/posts//jLdVzd6bJ2NVq7GyItPdAvwmPSqi9nBLNlFJulEC.webp",
+      "description": "sadasd",
+      "category": "festival",
       "id": 22
     }
   ],
@@ -476,6 +522,24 @@
       "productImage": "https://pasla.jambiprov.go.id/wp-content/uploads/2023/03/pengertian-pasar.png",
       "quantity": 1,
       "id": 2
+    },
+    {
+      "userId": 8,
+      "productId": 4,
+      "price": 5000000,
+      "productName": "Jakarta Fair Kemayoran",
+      "productImage": "https://www.detikindonesia.co.id/wp-content/uploads/2023/06/IMG_20230617_100740-780x470.jpg",
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "userId": 31,
+      "productId": 2,
+      "price": 25000,
+      "productName": "Master Chef",
+      "productImage": "https://static.rctiplus.id/media/1000/files/fta_rcti/Banner_Landscape/snapshot/241222/master_chef_indonesia_season_10_potrait.jpg",
+      "quantity": 1,
+      "id": 4
     }
   ],
   "referralCode": [

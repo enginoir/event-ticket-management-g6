@@ -18,6 +18,7 @@ import ProductDetail from './pages/ProductDetail';
 import History from "./pages/History"
 import Profile from "./pages/Profile"
 import Organizer from "./pages/Organizer"
+import Footer from './components/Footer';
 
 function App(props) {
     useEffect(() => {
@@ -51,6 +52,7 @@ function App(props) {
             <Route Component={Organizer} path='/organizer-dashboard'/>
 
           </Routes>
+          <Footer/>
         </BrowserRouter>
       </div>
 
