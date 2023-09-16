@@ -3,7 +3,7 @@ import { Label } from "reactstrap";
 
 export default function Footer() {
   return (
-    <Box bg="blue.500" color="white" w="100%" mt={5}>
+    <Box bgColor="gray.100"  color="light" w="100%" mt={5}>
       <Container maxW="container.xl" py={4}>
         <Flex direction={{ base: "column", md: "row" }}>
         <Box flex="3">
@@ -24,9 +24,9 @@ export default function Footer() {
           </Box>
         </Flex>
 
-        <Box textAlign="center" py={3} mt={1} bg="rgba(0, 0, 0, 0.2)">
+        <Box textAlign="center" py={3} mt={1} bg="rgba(0, 0, 0, 0.2)" >
           © {new Date().getFullYear()} Copyright:{' '}
-          <Link color="white" href='/'>
+          <Link color="black" href='/'>
             DoDooS App
           </Link>
         </Box>
