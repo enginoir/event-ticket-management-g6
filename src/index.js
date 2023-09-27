@@ -12,12 +12,15 @@ import { ChakraProvider } from '@chakra-ui/react'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const store = createStore(rootReducer, applyMiddleware(ReduxThunk))
 
-root.render(
-  <ChakraProvider>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </ChakraProvider>
+root.render( <
+    ChakraProvider >
+    <
+    Provider store = { store } >
+    <
+    App / >
+    <
+    /Provider> <
+    /ChakraProvider>
 
 );
 
@@ -25,3 +28,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+//
