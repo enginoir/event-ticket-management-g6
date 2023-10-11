@@ -1,0 +1,556 @@
+{
+  "users": [
+    {
+      "fullname": "ayy",
+      "username": "ayyimtesting",
+      "email": "ayyimtesting@gmail.com",
+      "password": "pa55word",
+      "id": 1
+    },
+    {
+      "fullname": "ayy1",
+      "username": "ayyimtesting1",
+      "email": "ayyimtesting1@gmail.com",
+      "password": "abcdefg",
+      "role": "user",
+      "id": 2
+    },
+    {
+      "fullname": "",
+      "username": "",
+      "email": "abc@gmail.com",
+      "password": "abcd",
+      "role": "user",
+      "id": 3
+    },
+    {
+      "fullname": "sadasdsad",
+      "username": "dfssfddfsdsffds",
+      "email": "adbc@gmail.com",
+      "password": "abcdd",
+      "role": "user",
+      "id": 4
+    },
+    {
+      "fullname": "abcd",
+      "username": "efgh",
+      "email": "abcd@gmail.com",
+      "password": "abcdefgh",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "fullname": "",
+      "username": "",
+      "email": "",
+      "password": "",
+      "role": "user",
+      "id": 6
+    },
+    {
+      "fullname": "",
+      "username": "",
+      "email": "",
+      "password": "",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "fullname": "arnold suasanaseger",
+      "username": "arnold",
+      "email": "arnold@gmail.com",
+      "password": "password",
+      "role": "organizer",
+      "id": 8
+    },
+    {
+      "fullname": "1234",
+      "username": "12345",
+      "email": "123@gmail.com",
+      "password": "password",
+      "role": "user",
+      "id": 9
+    },
+    {
+      "fullname": "bill gates",
+      "username": "bill",
+      "email": "bill@gmail.com",
+      "password": "password",
+      "role": "user",
+      "id": 10
+    },
+    {
+      "fullname": "Full Name",
+      "username": "",
+      "email": "",
+      "password": "",
+      "role": "user",
+      "id": 11
+    },
+    {
+      "fullname": "udin ajib",
+      "username": "udin",
+      "email": "udin@gmail.com",
+      "password": "password",
+      "role": "user",
+      "id": 12
+    },
+    {
+      "fullname": "pak ujang",
+      "username": "ujang",
+      "email": "ujang@gmail.com",
+      "password": "password",
+      "role": "user",
+      "id": 13
+    },
+    {
+      "fullname": "dsad",
+      "username": "asdasd",
+      "email": "fdds",
+      "password": "dsfsdfdsf",
+      "role": "user",
+      "id": 14
+    },
+    {
+      "fullname": "Xzxz",
+      "username": "Zxz",
+      "email": "Zxzx",
+      "password": "zxZXz",
+      "role": "user",
+      "id": 15
+    },
+    {
+      "fullname": "sadasd",
+      "username": "asdasds",
+      "email": "sdfdsfdfs",
+      "password": "dsfdfsdfs",
+      "role": "user",
+      "id": 16
+    },
+    {
+      "fullname": "tes",
+      "username": "tes",
+      "email": "tes",
+      "password": "tes",
+      "role": "user",
+      "id": 17
+    },
+    {
+      "fullname": "abc",
+      "username": "abc",
+      "email": "abc",
+      "password": "abc",
+      "role": "user",
+      "id": 18
+    },
+    {
+      "fullname": "efg",
+      "username": "efg",
+      "email": "efg",
+      "password": "efg",
+      "role": "user",
+      "id": 19
+    },
+    {
+      "fullname": "qwe",
+      "username": "qwe",
+      "email": "qwe",
+      "password": "qwe",
+      "role": "user",
+      "id": 20
+    },
+    {
+      "fullname": "",
+      "username": "testing1",
+      "email": "testing1@gmail.com",
+      "password": "qwe",
+      "role": "user",
+      "id": 21
+    },
+    {
+      "fullname": "",
+      "username": "testing1",
+      "email": "testing1@gmail.com",
+      "password": "qwe",
+      "role": "user",
+      "id": 22
+    },
+    {
+      "fullname": "",
+      "username": "testing1",
+      "email": "testing1@gmail.com",
+      "password": "qwe",
+      "role": "user",
+      "id": 23
+    },
+    {
+      "fullname": "boba",
+      "username": "boba",
+      "email": "boba@gmail.com",
+      "password": "boba",
+      "confirmPassword": "boba",
+      "role": "user",
+      "id": 24
+    },
+    {
+      "fullname": "testss",
+      "username": "test",
+      "email": "test@gmail.com",
+      "password": "tests",
+      "confirmPassword": "tests",
+      "role": "organizer",
+      "id": 25
+    },
+    {
+      "fullname": "Super Admin",
+      "username": "superadmin",
+      "email": "admin@gmail.com",
+      "password": "superman!",
+      "confirmPassword": "superman!",
+      "role": "admin",
+      "id": 26
+    },
+    {
+      "fullname": "test5",
+      "username": "test5",
+      "email": "test5@gmail.com",
+      "password": "password",
+      "confirmPassword": "password",
+      "role": "organizer",
+      "id": 27
+    },
+    {
+      "fullname": "tes6",
+      "username": "tes6",
+      "email": "tes6@gmail.com",
+      "password": "password",
+      "confirmPassword": "password",
+      "role": "user",
+      "id": 28
+    },
+    {
+      "fullname": "tes7",
+      "username": "tes7",
+      "email": "tes7@gmail.com",
+      "password": "password",
+      "confirmPassword": "password",
+      "role": "user",
+      "id": 29
+    },
+    {
+      "fullname": "tes8",
+      "username": "tes8",
+      "email": "tes8@gmail.com",
+      "password": "tes8",
+      "confirmPassword": "tes8",
+      "role": "user",
+      "id": 30
+    },
+    {
+      "fullname": "Evelio Excellenta",
+      "username": "evelio",
+      "email": "evelio@gmail.com",
+      "password": "password",
+      "confirmPassword": "password",
+      "role": "user",
+      "id": 31
+    },
+    {
+      "fullname": "daffa",
+      "username": "daffa",
+      "email": "daffa@gmail.com",
+      "password": "password",
+      "confirmPassword": "password",
+      "role": "user",
+      "id": 32
+    }
+  ],
+  "transactions": [
+    {
+      "userId": 25,
+      "address": "test",
+      "recipientName": "test",
+      "totalPrice": 47250,
+      "totalPayment": 50000,
+      "transactionDate": "10-9-2023",
+      "transactionItems": [
+        {
+          "userId": 25,
+          "productId": 1,
+          "price": 20000,
+          "productName": "Sayur Mayur",
+          "productImage": "https://pasla.jambiprov.go.id/wp-content/uploads/2023/03/pengertian-pasar.png",
+          "quantity": 1,
+          "id": 1
+        },
+        {
+          "userId": 25,
+          "productId": 2,
+          "price": 25000,
+          "productName": "Master Chef",
+          "productImage": "https://static.rctiplus.id/media/1000/files/fta_rcti/Banner_Landscape/snapshot/241222/master_chef_indonesia_season_10_potrait.jpg",
+          "quantity": 1,
+          "id": 2
+        }
+      ],
+      "id": 1
+    },
+    {
+      "userId": 32,
+      "address": "daffa",
+      "recipientName": "daffa",
+      "totalPrice": 94500,
+      "totalPayment": 20000000,
+      "transactionDate": "15-9-2023",
+      "transactionItems": [
+        {
+          "userId": 32,
+          "productId": 1,
+          "price": 20000,
+          "productName": "Sayur Mayur",
+          "productImage": "https://pasla.jambiprov.go.id/wp-content/uploads/2023/03/pengertian-pasar.png",
+          "quantity": 2,
+          "id": 5
+        },
+        {
+          "userId": 32,
+          "productId": 3,
+          "price": 50000,
+          "productName": "Panjat Tebing",
+          "productImage": "https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/11/11043249/mengenal-olahraga-panjat-tebing-manfaat-dan-tekniknya-halodoc.jpg",
+          "quantity": 1,
+          "id": 6
+        }
+      ],
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "productName": "Sayur Mayur",
+      "price": 20000,
+      "productImage": "https://pasla.jambiprov.go.id/wp-content/uploads/2023/03/pengertian-pasar.png",
+      "description": "sayur segar dari kebun",
+      "category": "food"
+    },
+    {
+      "id": 2,
+      "productName": "Master Chef",
+      "price": 25000,
+      "productImage": "https://static.rctiplus.id/media/1000/files/fta_rcti/Banner_Landscape/snapshot/241222/master_chef_indonesia_season_10_potrait.jpg",
+      "description": "Siapa yang jadi pemenangnya",
+      "category": "food"
+    },
+    {
+      "id": 3,
+      "productName": "Panjat Tebing",
+      "price": 50000,
+      "productImage": "https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/11/11043249/mengenal-olahraga-panjat-tebing-manfaat-dan-tekniknya-halodoc.jpg",
+      "description": "dari pada panjat sosial",
+      "category": "sport"
+    },
+    {
+      "id": 4,
+      "productName": "Jakarta Fair Kemayoran",
+      "price": 5000000,
+      "productImage": "https://www.detikindonesia.co.id/wp-content/uploads/2023/06/IMG_20230617_100740-780x470.jpg",
+      "description": "Pameran & Hiburan Terbesar",
+      "category": "festival"
+    },
+    {
+      "id": 5,
+      "productName": "Keriaan Depok",
+      "price": 10000,
+      "productImage": "https://berita.depok.go.id/storage/posts//jLdVzd6bJ2NVq7GyItPdAvwmPSqi9nBLNlFJulEC.webp",
+      "description": "Meriahkan festival gembira depok",
+      "category": "festival"
+    },
+    {
+      "id": 6,
+      "productName": "Jelajah Bumi Lasinrang",
+      "price": 60000,
+      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
+      "description": "mari jelajah dengan sepeda",
+      "category": "sport"
+    },
+    {
+      "id": 7,
+      "productName": "Penanaman 10 juta pohon",
+      "price": 0,
+      "productImage": "https://www.ngopibareng.id/images/uploads/2022/2022-05-23/aksi-tanam-10-juta-pohon-launching-di-bali-24-mei--thumbnail-582.webp",
+      "description": "Gerakan nasional revolusi",
+      "category": "festival"
+    },
+    {
+      "id": 8,
+      "productName": "Festival Bapak",
+      "price": 100000,
+      "productImage": "https://highlight.id/wp-content/uploads/2022/11/festival-bapak-event-talkshow-agenda-komunitas-peduli-parenting-indonesia_01.jpg",
+      "description": "Bapack Bapack",
+      "category": "education"
+    },
+    {
+      "id": 9,
+      "productName": "Indonesia Game Show",
+      "price": 50000,
+      "productImage": "https://sozo.sg/home/wp-content/uploads/2020/02/87010379_176039193827738_1814318632507801600_o.jpg",
+      "description": "ultimate gaming event",
+      "category": "game"
+    },
+    {
+      "id": 10,
+      "productName": "Cemilan Nusantara",
+      "price": 0,
+      "productImage": "https://jadwalevent.web.id/wp-content/uploads/2021/06/197913752_130981892367391_8244822297758374153_n-720x405.jpg",
+      "description": "ngemil",
+      "category": "food"
+    },
+    {
+      "id": 11,
+      "productName": "Jelajah Bumi Lasinrang",
+      "price": 60000,
+      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
+      "description": "mari jelajah dengan sepeda",
+      "category": "sport"
+    },
+    {
+      "id": 12,
+      "productName": "Jelajah Bumi Lasinrang",
+      "price": 60000,
+      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
+      "description": "mari jelajah dengan sepeda",
+      "category": "sport"
+    },
+    {
+      "id": 13,
+      "productName": "Jelajah Bumi Lasinrang",
+      "price": 60000,
+      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
+      "description": "mari jelajah dengan sepeda",
+      "category": "sport"
+    },
+    {
+      "id": 14,
+      "productName": "Personal Branding",
+      "price": 300000,
+      "productImage": "https://jadwalevent.web.id/wp-content/uploads/2022/07/Event-Edukasi-di-Jeneponto.jpg",
+      "description": "scale up",
+      "category": "education"
+    },
+    {
+      "id": 15,
+      "productName": "Jelajah Bumi Lasinrang",
+      "price": 60000,
+      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
+      "description": "mari jelajah dengan sepeda",
+      "category": "sport"
+    },
+    {
+      "id": 16,
+      "productName": "Jelajah Bumi Lasinrang",
+      "price": 60000,
+      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
+      "description": "mari jelajah dengan sepeda",
+      "category": "sport"
+    },
+    {
+      "id": 17,
+      "productName": "Jelajah Bumi Lasinrang",
+      "price": 60000,
+      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
+      "description": "mari jelajah dengan sepeda",
+      "category": "sport"
+    },
+    {
+      "productName": "Jelajah Bumi Lasinrang 23",
+      "price": 6535534,
+      "productImage": "https://jadwalevent.web.id/wp-content/uploads/2022/07/Event-Edukasi-di-Jeneponto.jpg",
+      "description": "mari jelajah dengan sepeda onthel",
+      "category": "sport",
+      "id": 18
+    },
+    {
+      "productName": "Jelajah Bumi Lasinrang 15",
+      "price": 1241232141231,
+      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
+      "description": "mari jelajah dengan sepeda onthel",
+      "category": "sport",
+      "id": 19
+    },
+    {
+      "productName": "Jelajah Bumi",
+      "price": 421321355,
+      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
+      "description": "mari jelajah dengan sepeda onthelsss",
+      "category": "sport",
+      "id": 20
+    },
+    {
+      "productName": "Jelajah Bumi232",
+      "price": "2",
+      "productImage": "https://asset-2.tstatic.net/makassar/foto/bank/images/lbc-9-422022.jpg",
+      "description": "mari jelajah dengan sepeda onthelsss",
+      "addCategory": "sport",
+      "organizerId": 25,
+      "id": 21
+    },
+    {
+      "productName": "abc",
+      "price": 200000,
+      "productImage": "https://berita.depok.go.id/storage/posts//jLdVzd6bJ2NVq7GyItPdAvwmPSqi9nBLNlFJulEC.webp",
+      "description": "sadasd",
+      "category": "festival",
+      "id": 22
+    }
+  ],
+  "carts": [
+    {
+      "userId": 25,
+      "productId": 2,
+      "price": 25000,
+      "productName": "Master Chef",
+      "productImage": "https://static.rctiplus.id/media/1000/files/fta_rcti/Banner_Landscape/snapshot/241222/master_chef_indonesia_season_10_potrait.jpg",
+      "quantity": 1,
+      "id": 1
+    },
+    {
+      "userId": 25,
+      "productId": 1,
+      "price": 20000,
+      "productName": "Sayur Mayur",
+      "productImage": "https://pasla.jambiprov.go.id/wp-content/uploads/2023/03/pengertian-pasar.png",
+      "quantity": 1,
+      "id": 2
+    },
+    {
+      "userId": 8,
+      "productId": 4,
+      "price": 5000000,
+      "productName": "Jakarta Fair Kemayoran",
+      "productImage": "https://www.detikindonesia.co.id/wp-content/uploads/2023/06/IMG_20230617_100740-780x470.jpg",
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "userId": 31,
+      "productId": 2,
+      "price": 25000,
+      "productName": "Master Chef",
+      "productImage": "https://static.rctiplus.id/media/1000/files/fta_rcti/Banner_Landscape/snapshot/241222/master_chef_indonesia_season_10_potrait.jpg",
+      "quantity": 1,
+      "id": 4
+    }
+  ],
+  "referralCode": [
+    {
+      "referral": ""
+    },
+    {
+      "referral": "ABC"
+    },
+    {
+      "referral": "REFERRAL"
+    }
+  ]
+}

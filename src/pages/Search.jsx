@@ -93,7 +93,7 @@ class Home extends React.Component {
 
   searchBtnHandler = () => {
     const filteredProductList = this.state.productList.filter((val) => {
-      return val.productName.toLowerCase().includes(this.state.searchProductName.toLowerCase()) && val.category.toLowerCase().includes(this.state.searchCategory.toLowerCase())
+      return val.productName?.toLowerCase().includes(this.state.searchProductName?.toLowerCase()) && val.category?.toLowerCase().includes(this.state.searchCategory?.toLowerCase())
     })
 
     this.setState({ filteredProductList, maxPage: Math.ceil(filteredProductList.length / this.state.itemPerPage), page: 1 })
